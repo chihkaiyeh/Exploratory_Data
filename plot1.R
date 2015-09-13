@@ -9,7 +9,7 @@ colClasses=c("character", "character", "numeric", "numeric", "numeric", "numeric
 dataset<- data[data$Date %in% c("1/2/2007", "2/2/2007"),] 
 str(dataset)
 
-png("plot1.png", width=520, height=520)
+png("plot1.png", width=480, height=480)
 plot <- as.numeric(dataset$Global_active_power)
 hist(plot, main="Global Active Power",xlab="Global Active Power (kilowatts)", ylab="Frequency", col="Red")
 
